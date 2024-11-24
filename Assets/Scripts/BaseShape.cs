@@ -3,7 +3,9 @@ using TMPro;
 
 public class BaseShape : MonoBehaviour
 {
+    //ENCAPSULATION
     [SerializeField] private string message;
+
     private static TextMeshProUGUI messageText;
 
     private void Start()
@@ -14,6 +16,7 @@ public class BaseShape : MonoBehaviour
         }
     }
 
+    //ABSTRACTION
     public virtual void DisplayMessage()
     {
         //Debug.Log("This is the base class message.");
@@ -24,11 +27,13 @@ public class BaseShape : MonoBehaviour
         }
     }
 
+    //ABSTRACTION
     public void SetColor(Color color)
     {
         GetComponent<Renderer>().material.color = color;
     }
 
+    //ENCAPSULATION
     public string Message
     {
         get => message;

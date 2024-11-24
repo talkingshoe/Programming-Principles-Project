@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
+//INHERITANCE
 public class Sphere : BaseShape
 {
     private void Awake()
@@ -8,6 +9,7 @@ public class Sphere : BaseShape
         Message = "This is a sphere!";
     }
 
+    //POLYMORPHISM
     public override void DisplayMessage()
     {
         base.DisplayMessage();

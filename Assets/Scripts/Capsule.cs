@@ -1,5 +1,6 @@
 using UnityEngine;
 
+//INHERITANCE
 public class Capsule : BaseShape
 {
     private void Awake()
@@ -7,6 +8,7 @@ public class Capsule : BaseShape
         Message = "This is a capsule!";
     }
 
+    //POLYMORPHISM
     public override void DisplayMessage()
     {
         base.DisplayMessage();
