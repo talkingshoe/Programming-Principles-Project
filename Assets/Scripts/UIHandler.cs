@@ -12,11 +12,6 @@ public class UIHandler : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    public void SetPlayerName()
-    {
-        PlayerDataHandle.instance.playerName = playerNameInput.text;
-    }
-
     public void ExitGame()
     {
 #if UNITY_EDITOR
